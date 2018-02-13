@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <test name="Firefox Test">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="MotusGroup.MotusArtifact.DriverTabTest"/>
+    </classes>
+  </test> <!-- Firefox Test -->
+  <test name="Firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="MotusGroup.MotusArtifact.DriverTabTest">
+        <methods>
+          <include name="testDriverSearch"/>
+          <include name="setUp"/>
+          <include name="setUpObjects"/>
+        </methods>
+      </class> <!-- MotusGroup.MotusArtifact.DriverTabTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
